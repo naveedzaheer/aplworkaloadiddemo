@@ -2,8 +2,9 @@ name: Run Azure Login with OpenID Connect
 on: [push]
 
 permissions:
-      id-token: write
+      id-token: read-all|write-all
       contents: read
+      
       
 jobs: 
   build-and-deploy:
